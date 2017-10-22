@@ -23,7 +23,7 @@ change management application. The `verify` feature makes it particularly useful
 when combined with [Github] and [Travis].
 
 N.B., It is *not* best practice to use [Sqitch] in this way because the `verify`
-command should contain tests without and regard for data.
+command should contain tests without any regard for data.
 
 ## Commands
 Initialise a new project.
