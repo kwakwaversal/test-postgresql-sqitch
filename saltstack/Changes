@@ -1,0 +1,3 @@
+0.0.1
+  - Add Vagrantfile to provision PostgreSQL
+  - Add cpanm to Vagrant and install latest sqitch

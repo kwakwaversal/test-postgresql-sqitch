@@ -1,0 +1,2 @@
+include:
+  - sqitch.cpanm

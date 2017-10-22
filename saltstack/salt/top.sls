@@ -2,3 +2,4 @@ base:
     '*':
         - common
         - postgres
+        - sqitch
