@@ -1,0 +1,7 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Forcing line endings to LF as initial tests were on Windoze 
+*.conf=lf
+*.plan=lf
+*.sql=lf
