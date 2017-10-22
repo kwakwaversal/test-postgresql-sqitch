@@ -13,3 +13,12 @@ postgres-priv-sqitch-ro:
 postgres-priv-sqitch-rw:
   postgres_group.present:
     - name: sqitch_rw
+
+postgres-priv-sqitch-usage:
+  postgres_privileges.present:
+    - name: sqitch_rw
+    - object_name: sqitch
+    - object_type: database
+    - privileges:
+      - ALL
+    - maintenance_db: sqitch

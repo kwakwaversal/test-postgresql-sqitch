@@ -2,3 +2,4 @@
   - Add Vagrantfile to provision PostgreSQL
   - Add cpanm to Vagrant and install latest sqitch
   - Initialise Sqitch configuration
+  - Create a super user for Pg extensions
