@@ -2,3 +2,4 @@
 %project=testing
 %uri=https://github.com/kwakwaversal/test-postgresql-sqitch
 
+extensions 2017-10-22T21:52:01Z Paul Williams <kwakwaversal@gmail.com> # Add Pg extensions (CITEXT)

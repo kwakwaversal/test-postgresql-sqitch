@@ -1,5 +1,8 @@
-0.0.1
+-----------------------------------------------------
+
+0.0.1                                      2017-10-23
   - Add Vagrantfile to provision PostgreSQL
   - Add cpanm to Vagrant and install latest sqitch
   - Initialise Sqitch configuration
   - Create a super user for Pg extensions
+  - Add Sqitch plan and `extensions` change

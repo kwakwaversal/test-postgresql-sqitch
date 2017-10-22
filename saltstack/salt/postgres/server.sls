@@ -3,6 +3,7 @@ postgres-server:
     - install_recommends: False
     - names:
       - postgresql
+      - postgresql-contrib
 
 postgres-server-running:
   service.running:
