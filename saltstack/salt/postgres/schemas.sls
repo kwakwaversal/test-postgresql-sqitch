@@ -1,4 +1,4 @@
-{% for schema in ['test'] %}
+{% for schema in ['testing'] %}
 postgres-schema-{{ schema }}:
   postgres_schema.present:
     - name: {{ schema }}

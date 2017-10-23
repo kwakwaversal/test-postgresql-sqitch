@@ -6,3 +6,4 @@
   - Initialise Sqitch configuration
   - Create a super user for Pg extensions
   - Add Sqitch plan and `extensions` change
+  - Add Sqitch `citext` test
