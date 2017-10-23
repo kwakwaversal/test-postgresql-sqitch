@@ -45,7 +45,17 @@ Add a new database *change*.
 
 ```
 sqitch add extensions -n 'Add Pg extensions (CITEXT)'
-sqitch add citext --requires extension -n 'Add CITEXT test'
+sqitch add citext --requires extensions -n 'Add CITEXT test'
+```
+
+### Deploy, Verify, Revert
+These commands assume you're running them from within the vagrant VM which is
+provisioned from the `Vagrantfile`.
+
+```
+sqitch deploy db:pg://super_sqitch_user:password@localhost/sqitch
+sqitch verify db:pg://super_sqitch_user:password@localhost/sqitch
+sqitch revert db:pg://super_sqitch_user:password@localhost/sqitch
 ```
 
 # References
