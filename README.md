@@ -17,6 +17,10 @@ behaves almost exactly like `text`.
 
 The tests make sure it does this, and that an index is used appropriately.
 
+## [constraints]
+Makes sure that constraints are doing what I expect them to do. This is not
+complete, but I will expand on the tests as and when I need them.
+
 # Using Sqitch
 This repository is also an excuse for me to use [Sqitch]. Sqitch is a database
 change management application. The `verify` feature makes it particularly useful
@@ -62,6 +66,7 @@ sqitch revert db:pg://super_sqitch_user:password@localhost/sqitch
 * [Sqitch turorial](https://metacpan.org/pod/distribution/App-Sqitch/lib/sqitchtutorial.pod)
 
 [citext]: https://www.postgresql.org/docs/current/static/citext.html
+[constraints]: https://www.postgresql.org/docs/current/static/ddl-constraints.html
 [Github]: https://github.com/
 [Sqitch]: http://sqitch.org/
 [Travis]: https://travis-ci.org/
