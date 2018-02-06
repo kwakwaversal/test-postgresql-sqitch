@@ -1,7 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Forcing line endings to LF as initial tests were on Windoze 
+# Forcing line endings to LF as initial tests were on Windoze
 *.conf=lf
 *.plan=lf
 *.sql=lf
+
+# https://metacpan.org/pod/distribution/App-Sqitch/lib/sqitchtutorial.pod#Emergency
+sqitch.plan merge=union
