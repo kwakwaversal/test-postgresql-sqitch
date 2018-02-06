@@ -3,8 +3,7 @@ Test PostgreSQL features to make sure they do what's expected
 
 # Description
 Over time there have been PostgreSQL-specific features I've wanted to check.
-The first one was to make sure [citext] was doing what I expect it to do. I will
-expand on these when and as I feel necessary.
+The first one was to make sure [citext] was doing what I expect it to do.
 
 N.B., I am using [Sqitch] for testing.
 
