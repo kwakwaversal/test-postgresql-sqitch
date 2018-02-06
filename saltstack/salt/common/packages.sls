@@ -4,4 +4,5 @@ common-packages:
     - names:
       - cpanminus
       - tmux
+      - tree
       - vim
