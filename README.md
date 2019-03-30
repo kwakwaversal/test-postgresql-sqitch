@@ -1,11 +1,13 @@
 # test-postgresql-sqitch [![Build Status](https://travis-ci.org/kwakwaversal/test-postgresql-sqitch.svg?branch=master)](https://travis-ci.org/kwakwaversal/test-postgresql-sqitch)
-Test PostgreSQL features to make sure they do what's expected
+Test PostgreSQL features to make sure they do what you expect
 
 # Description
 Over time there have been PostgreSQL-specific features I've wanted to check.
-The first one was to make sure [citext] was doing what I expect it to do.
+The first one was to make sure [citext] was doing what I expect it to do. The
+next was constraints and so on and so forth.
 
-N.B., I am using [Sqitch] for testing.
+This repository uses [Sqitch] to validate features and what I believe to be
+true.
 
 # Tests
 

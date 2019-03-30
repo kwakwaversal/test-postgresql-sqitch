@@ -10,10 +10,9 @@ install:
 before_script:
   - psql -U postgres -c 'create database testing'
 script:
-  - sqitch deploy db:pg://postgres:@/testing
-  - sqitch verify db:pg://postgres:@/testing
+  - sqitch deploy --verify db:pg://postgres:@/testing
   - sqitch revert db:pg://postgres:@/testing -y
-  - sqitch deploy db:pg://postgres:@/testing
+  - sqitch deploy --verify db:pg://postgres:@/testing
 sudo: false
 dist: trusty
 notifications:
