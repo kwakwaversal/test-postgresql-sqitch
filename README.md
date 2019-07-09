@@ -64,6 +64,7 @@ sqitch revert db:pg://super_sqitch_user:password@localhost/sqitch
 # References
 * [Sqitch turorial](https://metacpan.org/pod/distribution/App-Sqitch/lib/sqitchtutorial.pod)
 * [Default Pg constraint names](https://stackoverflow.com/a/4108266/1182273)
+* [Managing key/value pairs](https://justatheory.com/2010/08/postgres-key-value-pairs/)
 
 [citext]: https://www.postgresql.org/docs/current/static/citext.html
 [constraints]: https://www.postgresql.org/docs/current/static/ddl-constraints.html
