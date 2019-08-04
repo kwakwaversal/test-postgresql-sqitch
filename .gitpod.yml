@@ -2,8 +2,6 @@ image:
   file: .gitpod.dockerfile
 tasks:
   - init: >
-      psql -c 'create database testing;' &&
-      psql -c 'grant all privileges on database testing to gitpod;' &&
-      psql testing -c 'create extension pgtap;'
+      psql -c 'create extension pgtap;'
 ports:
   - port: 5000
