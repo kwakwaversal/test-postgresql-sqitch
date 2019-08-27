@@ -18,4 +18,11 @@ FROM
 WHERE
     extname='citext';
 
+SELECT
+    1/COUNT(*)
+FROM
+    pg_extension
+WHERE
+    extname='pgcrypto';
+
 ROLLBACK;
