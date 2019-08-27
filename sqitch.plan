@@ -6,3 +6,4 @@ extensions 2017-10-22T21:52:01Z Paul Williams <kwakwaversal@gmail.com> # Add Pg 
 utils 2017-10-22T23:38:54Z Paul Williams <kwakwaversal@gmail.com> # Add utility functions
 citext [extensions utils] 2017-10-22T23:05:57Z Paul Williams <kwakwaversal@gmail.com> # Add CITEXT test
 constraints 2018-02-05T14:26:15Z Paul Williams <kwakwaversal@gmail.com> # Testing different constraints
+schema/audit 2019-08-27T21:51:52Z Paul Williams <kwakwaversal@gmail.com> # Add audit schema
