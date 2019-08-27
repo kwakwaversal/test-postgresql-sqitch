@@ -8,3 +8,4 @@ citext [extensions utils] 2017-10-22T23:05:57Z Paul Williams <kwakwaversal@gmail
 constraints 2018-02-05T14:26:15Z Paul Williams <kwakwaversal@gmail.com> # Testing different constraints
 schema/audit 2019-08-27T21:51:52Z Paul Williams <kwakwaversal@gmail.com> # Add audit schema
 table/audit/table_changes [schema/audit] 2019-08-27T23:06:23Z Paul Williams <kwakwaversal@gmail.com> # Add audit.table_changes to store per-column changes
+trigger/log_changes [schema/audit] 2019-08-27T22:35:09Z Paul Williams <kwakwaversal@gmail.com> # Log changes to audit table
