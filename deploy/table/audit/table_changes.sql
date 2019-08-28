@@ -19,7 +19,13 @@ CREATE TABLE audit.table_changes (
 COMMENT ON TABLE audit.table_changes IS
 'Track all table column changes (updates only)';
 
-COMMENT ON COLUMN audit.table_changes.table_name IS
+COMMENT ON COLUMN audit.table_changes.added IS
+'When the table change was tracked';
+
+COMMENT ON COLUMN audit.table_changes.added_by IS
+'Who made the change (if it can be worked out from the record)';
+
+COMMENT ON COLUMN audit.table_changes.schema_name IS
 'Schema name the table belongs to';
 
 COMMENT ON COLUMN audit.table_changes.table_name IS
@@ -27,5 +33,11 @@ COMMENT ON COLUMN audit.table_changes.table_name IS
 
 COMMENT ON COLUMN audit.table_changes.column_name IS
 'Name of the column that changed';
+
+COMMENT ON COLUMN audit.table_changes.pk_name IS
+'Primary key name from the tracked table. Used for PITR to rebuild a record.';
+
+COMMENT ON COLUMN audit.table_changes.pk_value IS
+'Primary key value from the tracked table. Used for PITR to rebuild a record.';
 
 COMMIT;
