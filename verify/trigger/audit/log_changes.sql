@@ -1,4 +1,4 @@
--- Verify testing:trigger/log_changes on pg
+-- Verify testing:trigger/audit/log_changes on pg
 
 BEGIN;
 

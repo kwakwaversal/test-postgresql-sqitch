@@ -1,4 +1,4 @@
--- Revert testing:trigger/log_changes from pg
+-- Revert testing:trigger/audit/log_changes from pg
 
 BEGIN;
 
