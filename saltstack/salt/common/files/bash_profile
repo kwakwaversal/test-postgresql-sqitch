@@ -1,5 +1,8 @@
 # shortcuts for testing sqitch
-alias sd='sqitch deploy db:pg://super_sqitch_user:password@localhost/sqitch'
+alias sd='sqitch deploy --verify db:pg://super_sqitch_user:password@localhost/sqitch'
 alias sv='sqitch verify db:pg://super_sqitch_user:password@localhost/sqitch'
 # revert to the penultimate change
 alias sr='sqitch revert --to-change $(tail sqitch.plan -n 2 | head -1 | awk '"'"'{print $1;}'"'"') db:pg://super_sqitch_user:password@localhost/sqitch'
+
+# make it easier to drop into `psql`
+export PGSERVICE=sqitch
