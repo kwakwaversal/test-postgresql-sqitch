@@ -4,6 +4,7 @@ postgres-server:
     - names:
       - postgresql
       - postgresql-contrib
+      - pgtap
 
 postgres-server-running:
   service.running:
