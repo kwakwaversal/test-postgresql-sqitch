@@ -1,0 +1,23 @@
+BEGIN;
+
+/* SELECT plan(1); */
+SELECT no_plan();
+
+\i sql/constants.sql
+\i sql/test/unit_test_data.sql
+
+/****************************************************************************/
+-- Uncomment to make it easier testing functions without sqitch rebasing
+
+/* DROP TRIGGER IF EXISTS schema_table_trigger on schema.foo; */
+
+/* DROP FUNCTION IF EXISTS schema.table_trigger(); */
+
+/* \i deploy/[% change %].sql */
+
+/*****************************************************************************/
+-- Finish
+
+SELECT * FROM finish();
+
+ROLLBACK;
