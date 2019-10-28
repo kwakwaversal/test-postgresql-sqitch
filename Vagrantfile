@@ -16,7 +16,7 @@ ENV["VAGRANT_SQITCH_BOX_RAM"] = "2048"
 ENV["VAGRANT_SQITCH_POSTGRES_PORT"] = "5454"
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "debian/contrib-jessie64"
+  config.vm.box = "debian/contrib-buster64"
 
   # Increase VM RAM
   config.vm.provider :virtualbox do |v|
