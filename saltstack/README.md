@@ -8,7 +8,7 @@ These commands should be run from within a provisioned vagrant machine.
 $ vagrant up
 $ vagrant ssh
 $ cd /vagrant
-$ sqitch deploy db:pg://super_sqitch_user:password@localhost/sqitch
+$ sqitch deploy --verify db:pg://super_sqitch_user:password@localhost/sqitch
 $ sqitch verify db:pg://super_sqitch_user:password@localhost/sqitch
 $ sqitch revert --to-change citext db:pg://super_sqitch_user:password@localhost/sqitch
 ```
@@ -18,6 +18,12 @@ $ sqitch revert --to-change citext db:pg://super_sqitch_user:password@localhost/
 $ sd # sqitch deploy
 $ sv # sqitch verify
 $ sr # revert to the penultimate change in sqitch.plan
+```
+
+If you make any changes to the salt stack, you can apply them with:
+
+```bash
+sudo salt-call --local state.apply
 ```
 
 # Aliases
