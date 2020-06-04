@@ -14,8 +14,8 @@ CREATE TABLE audit.table_changes (
   column_name text not null,
   pk_name text[] default array['id'] not null,
   pk_value text[] not null,
-  old_value text,
-  new_value text
+  old_value jsonb,
+  new_value jsonb
 );
 
 CREATE INDEX table_changes_schema_name_to_pk_value_idx ON audit.table_changes

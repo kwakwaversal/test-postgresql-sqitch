@@ -145,6 +145,33 @@ SELECT is(count(*)::integer, 1)
 EXECUTE reset_audit_changes;
 
 /*****************************************************************************/
+-- Complex data types
+
+CREATE TEMPORARY TABLE complex (
+  id serial,
+  name text,
+  num integer,
+  textarray text[]
+);
+
+CREATE TRIGGER complex_trigger
+  AFTER UPDATE ON complex
+    FOR EACH ROW
+    EXECUTE PROCEDURE audit.log_changes();
+
+INSERT INTO complex(name) VALUES('hello');
+UPDATE
+  complex
+SET
+  textarray = ARRAY['1', '2'];
+
+select ARRAY(SELECT jsonb_array_elements_text(new_value)) from audit.table_changes;
+
+EXECUTE audit_count(1, '1 changes added from update (name, num, created_at)');
+
+EXECUTE reset_audit_changes;
+
+/*****************************************************************************/
 -- Debugging
 
 SELECT * FROM audit.table_changes;

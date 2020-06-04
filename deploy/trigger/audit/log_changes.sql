@@ -106,8 +106,8 @@ BEGIN
             col,
             pkcol,
             pkval,
-            jsold->>col,
-            jsnew->>col
+            jsold->col,
+            jsnew->col
           );
         /* RAISE NOTICE '%: %', col, jsnew->>col; */
         /* RAISE NOTICE '------ %', COALESCE(jsnew->>upcol, user); */
